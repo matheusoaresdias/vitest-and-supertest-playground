@@ -1,7 +1,7 @@
-import { mockUser, mockCreateTask, mockCreatedTask, mockFindAllTasks, mockUpdatedTask } from '../../src/mocks/tests'
+import { mockUser, mockCreateTask, mockCreatedTask, mockFindAllTasks, mockUpdatedTask } from '../../mocks/tests'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import axios from 'axios'
-import TaskService from '../../src/services/TaskService'
+import TaskService from '../../services/TaskService'
 
 const mockedAxios = axios as unknown as {
   get: ReturnType<typeof vi.fn>

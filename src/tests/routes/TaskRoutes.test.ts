@@ -1,8 +1,8 @@
 import request from 'supertest'
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import app from '../../src/app'
+import app from '../../app'
 import axios from 'axios'
-import { mockUser } from '../../src/mocks/tests'
+import { mockUser } from '../../mocks/tests'
 
 const mockedAxios = axios as unknown as {
   get: ReturnType<typeof vi.fn>
